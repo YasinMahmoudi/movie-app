@@ -1,0 +1,48 @@
+.menu {
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+  }
+
+  &__item {
+    // background-color: cadetblue;
+  }
+
+  &__link {
+    text-decoration: none;
+    // color: #fff;
+    color: #000;
+    display: block;
+    padding: 1rem 2rem;
+    font-size: clamp(1.1rem, 5vw, 1.6rem);
+    font-weight: 600;
+  }
+
+  &__title {
+  }
+}
+
+.logo {
+  h3 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.6rem, 5vw, 2.8rem);
+    letter-spacing: 0.2rem;
+  }
+}
+
+.singup {
+  align-self: stretch;
+  display: flex;
+}
+
+
+.btn {
+  border: none;
+  padding-inline: 2rem;
+  font-family: var(--font-heading);
+  font-weight: 100;
+  font-size: clamp(1.4rem, 5vw, 1.8rem);
+  border-radius: 1rem;
+  cursor: pointer;
+}

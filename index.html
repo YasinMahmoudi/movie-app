@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title> Movie App </title>
+
+    <!-- FONTS -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS FILES -->
+    <link
+      rel="stylesheet"
+      href="./css/style.css"
+    />
+
+    <!-- JS FILES -->
+    <script
+      defer
+      src="./Js/script.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER START -->
+      <header class="header">
+        <!-- LOGO START -->
+        <div class="logo">
+          <h3> LOGO </h3>
+        </div>
+        <!-- LOGO END -->
+
+        <!-- NAV START -->
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a
+                href="#"
+                class="menu__link"
+              >
+                <span class="menu__title"> Home </span>
+              </a>
+            </li>
+
+            <li class="menu__item">
+              <a
+                href="#"
+                class="menu__link"
+              >
+                <span class="menu__title"> Movies </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- NAV END -->
+
+        <!-- BUTTONS START -->
+        <div class="singup">
+          <button class="btn">
+            <p> GET START </p>
+          </button>
+        </div>
+        <!-- BUTTONS END -->
+      </header>
+      <!-- HEADER END -->
+
+      <!-- MAIN START -->
+      <main class="main">
+        <!-- HERO START -->
+        <section class="section section--hero">
+          <figure class="figure">
+            <img
+              src="./imgs/hero.jpg"
+              alt="hero"
+            />
+          </figure>
+
+          <figcaption>
+            <div class="hero__caption">
+              <h1> Enjoy wathcing movies with your familly and frinds </h1>
+
+              <button class="btn btn--scroll"> Explore movies </button>
+            </div>
+          </figcaption>
+        </section>
+        <!-- HERO END -->
+
+        <!-- MOVIES START -->
+        <section class="section section--movie">
+          <div class="section__header">
+            <h3 class="heading--1"> Movies </h3>
+
+            <form
+              class="form"
+              action=""
+              method="get"
+            >
+              <input
+                type="text"
+                class="search"
+                placeholder="search ..."
+              />
+            </form>
+          </div>
+
+          <!-- MOVIE CARDS ADD HERE -->
+          <div class="movie-container"> </div>
+
+          <!-- LOADING START -->
+          <div class="loading loading--hidden">
+            <div class="loading__item loading_item--1"></div>
+            <div class="loading__item loading_item--2"></div>
+            <div class="loading__item loading_item--3"></div>
+          </div>
+
+          <!-- LOADING END -->
+        </section>
+
+        <!-- MOVIES END -->
+      </main>
+      <!-- MAIN END -->
+    </div>
+
+    <!-- MODAL START -->
+    <div class="modal modal--hidden"></div>
+    <!-- MODAL END -->
+
+    <!-- OVERLAY START -->
+    <div class="overlay overlay--hidden"></div>
+    <!-- OVERLAY END -->
+  </body>
+</html>

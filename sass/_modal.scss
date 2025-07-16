@@ -1,0 +1,95 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 200;
+  border-right: 1rem solid rgba(255, 255, 255, 0.1);
+
+  transition: all .4s;
+
+  img {
+    height: 17vw;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 1rem rgba(255, 255, 255, 0.5);
+  }
+
+  &__header {
+    display: flex;
+    gap: 3rem;
+    margin-block: 4rem;
+    align-items: center;
+  }
+
+  &__body {
+    width: min(90%, 52rem);
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-wrap: balance;
+    font-family: var(--font-body);
+    
+  }
+
+
+  &--hidden {
+    left: -100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__close {
+    margin-block: 4rem;
+    align-self: flex-end;
+    margin-right: 2rem;
+    border-radius: 50%;
+    border: none;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
+.vote {
+  word-spacing: 0.5rem;
+  font-family: var(--font-body);
+
+  &__average {
+    font-size: 1.8rem;
+  }
+
+  &__count {
+    font-size: 1.2rem;
+  }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(1.5rem);
+    z-index: 100;
+    transition: opacity .4s;
+
+    &--hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+@media (max-width : 768px) {
+  .modal {
+    width: 100%;
+  }
+}
