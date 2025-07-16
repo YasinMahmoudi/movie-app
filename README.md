@@ -4,7 +4,7 @@
 
 <h2>🚀 Demo</h2>
 
-[movie-triangle.vercel.app](movie-triangle.vercel.app)
+[movie-triangle.vercel.app](https://movie-triangle.vercel.app/)
 
   
   
